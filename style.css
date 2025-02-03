@@ -67,6 +67,13 @@ body {
 
 .songList {
     height: 70vh;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+.songList ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .songList ul li {
@@ -82,13 +89,21 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.663);
 }
 
-.songinfo {
+.song-info {
     display: flex;
     align-items: center;
     gap: 5px;
 }
-.songinfo div {
+.song-info div {
     font-size: 14px;
+}
+
+.songinfo {
+    width: 35%;
+}
+.songtime {
+    width: 35%;
+    text-align: right;
 }
 
 .play-now {
@@ -117,6 +132,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 10px;
     background-color: #121212;
 }
 .header div {
@@ -173,6 +189,9 @@ body {
     cursor: pointer;
     transform: scale(1.05);
 }
+.card:hover .green-play-btn {
+    opacity: 1;
+}
 .card img {
     width: 100%;
     object-fit: contain;
@@ -189,6 +208,10 @@ body {
     position: absolute;
     bottom: 23%;
     right: 6%;
+}
+
+.green-play-btn {
+    opacity: 0;
 }
 
 .close {
@@ -210,14 +233,15 @@ body {
 /****PLAY BAR****/
 
 .playbar {
-    width: 100%;
+    width: 97%;
     height: 50px;
     background-color: #1f1f1f;
+    background-color: blue;
     border-radius: 25px;
 
     position: fixed;
-    bottom: 0;
-    left: 0;
+    bottom: 1%;
+    left: 1%;
 }
 
 .upper-playbar {
@@ -236,17 +260,22 @@ body {
 
     position: absolute;
     left: 50%;
-    bottom: 20%;
     transform: translateX(-50%);
 }
+.seekbar:hover {
+    cursor: pointer;
+}
 .circle {
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     border-radius: 100%;
     background-color: green;
     position: absolute;
     left: 0%;
-    bottom: -131%;
+    bottom: -84%;
+}
+.circle:hover {
+    cursor: pointer;
 }
 
 .controls img {
@@ -268,9 +297,6 @@ body {
     }
     .right {
         width: 100vw;
-    }
-    .cardContainer {
-        justify-content: center;
     }
     .card {
         width: 250px;

@@ -32,24 +32,7 @@
           <h2>Music Library</h2>
           <div class="songList">
             <ul>
-              <!-- <li>
-                <div class="song-info">
-                  <img class="invert" src="assets/svgs/music.svg" alt="" />
-                  <div class="info">
-                    <div>Music Name</div>
-                    <div>Artist Name</div>
-                  </div>
-                </div>
-                <div class="play-now">
-                  <span>Play Now</span>
-                  <img
-                    width="25"
-                    class="invert"
-                    src="assets/svgs/play.svg"
-                    alt=""
-                  />
-                </div>
-              </li> -->
+              
             </ul>
           </div>
         </div>
@@ -75,10 +58,17 @@
         <div class="albums">
           <h2>Music Albums</h2>
           <div class="cardContainer">
-            <div class="card">
+            <div data-folder="cs" class="card">
               <img src="assets/images/honey-bg.jpeg" alt="" />
               <h4>Glory</h4>
               <p>Yo Yo Honey Singh</p>
+              <span class="green-play-btn"><img src="assets/svgs/green-play.svg" alt="" /></span>
+            </div>
+
+            <div data-folder="ncs" class="card">
+              <img src="assets/images/honey-bg.jpeg" alt="" />
+              <h4>Flory</h4>
+              <p>Yo Yo Boney Ring</p>
               <span class="green-play-btn"><img src="assets/svgs/green-play.svg" alt="" /></span>
             </div>
 
@@ -93,6 +83,12 @@
                   <img id="next" class="invert" src="assets/svgs/next.svg" alt="" />
                 </div>
                 <div class="songtime">Song Time</div>
+                <div class="volume">
+                  <img class="invert" src="assets/svgs/volume.svg" alt="">
+                  <div class="range">
+                    <input type="range" name="volume" id="">
+                  </div>
+                </div>
               </div>
               <div class="seekbar">
                 <div class="circle"></div>

@@ -181,9 +181,11 @@ body {
     background-color: #1f1f1f;
     border-radius: 5px;
     width: 180px;
+    height: 250px;
     padding: 7px;
     position: relative;
     transition: all 0.3s ease;
+    flex-basis: 200px;
 }
 .card:hover {
     cursor: pointer;
@@ -192,9 +194,10 @@ body {
 .card:hover .green-play-btn {
     opacity: 1;
 }
-.card img {
+.card > img {
     width: 100%;
-    object-fit: contain;
+    height: 70%;
+    margin-bottom: 10px;
 }
 .card h4 {
     font-weight: 500;

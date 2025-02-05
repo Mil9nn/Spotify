@@ -1,90 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="utility.css" />
-    <script src="script.js" defer></script>
-    <title>Document</title>
-  </head>
-  <body>
-    <div class="container">
-      <div class="left">
-        <div class="home">
-          <div>
-            <div>
-              <img width="50" src="assets/svgs/logo.svg" alt="" />
-              <span>Music</span>
-            </div>
-            <img class="invert close" src="assets/svgs/close.svg" alt="" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/utility.css" />
+  <script src="js/script.js" defer></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="left">
+      <div class="home">
+        <div>
+          <div class="logo-section">
+            <img width="50" src="assets/svgs/logo.svg" alt="" />
+            <span>Euphonia</span>
           </div>
-          <div>
-            <img class="invert" src="assets/svgs/home.svg" alt="" />
-            <span>Home</span>
-          </div>
-          <div>
-            <img class="invert" src="assets/svgs/search.svg" alt="" />
-            <span>Search</span>
-          </div>
+          <img class="invert close" src="assets/svgs/close.svg" alt="" />
         </div>
-        <div class="library">
-          <h2>Music Library</h2>
-          <div class="songList">
-            <ul>
-              
-            </ul>
-          </div>
+        <div>
+          <img class="invert" src="assets/svgs/home.svg" alt="" />
+          <span>Home</span>
+        </div>
+        <div>
+          <img class="invert" src="assets/svgs/search.svg" alt="" />
+          <span>Search</span>
         </div>
       </div>
-      <!--Left Container Ends-->
+      <div class="library">
+        <h2><img width="50" src="assets/svgs/library.svg" alt="">Music Library</h2>
+        <div class="songList">
+          <ul>
 
-      <div class="right">
-        <div class="header">
-          <div>
-            <img
-              class="invert hamburger"
-              src="assets/svgs/hamburger.svg"
-              alt=""
-            />
-            <img class="invert" src="assets/svgs/left-angle.svg" alt="" />
-            <img class="invert" src="assets/svgs/right-angle.svg" alt="" />
-          </div>
-          <div class="sign-in-btns">
-            <a href="#">Sign in</a>
-            <a href="#">Log in</a>
-          </div>
-        </div>
-        <div class="albums">
-          <h2>Music Albums</h2>
-          <div class="cardContainer">
-            <!--Cards-->
-
-            <!--Music PlayBar-->
-            <div class="playbar">
-              <div class="upper-playbar">
-                <div class="songinfo">Song Name</div>
-                <div class="controls">
-                  <img id="previous" class="invert" src="assets/svgs/previous.svg" alt="" />
-                  <img id="play" class="invert" src="assets/svgs/play.svg" alt="" />
-                  <img id="next" class="invert" src="assets/svgs/next.svg" alt="" />
-                </div>
-                <div class="songtime">Song Time</div>
-                <div class="volume">
-                  <img class="invert" src="assets/svgs/volume.svg" alt="">
-                  <div class="range">
-                    <input type="range" name="volume" id="">
-                  </div>
-                </div>
-              </div>
-              <div class="seekbar">
-                <div class="circle"></div>
-              </div>
-            </div>
-          </div>
+          </ul>
         </div>
       </div>
-      <!--Right Container Ends-->
     </div>
-  </body>
+    <!--Left Container Ends-->
+
+    <div class="right">
+      <div class="header">
+        <div>
+          <img class="invert hamburger" src="assets/svgs/hamburger.svg" alt="" />
+          <img class="invert" src="assets/svgs/left-angle.svg" alt="" />
+          <img class="invert" src="assets/svgs/right-angle.svg" alt="" />
+        </div>
+        <div class="sign-in-btns">
+          <a href="#">Sign in</a>
+          <a href="#">Log in</a>
+        </div>
+      </div>
+      <div class="albums">
+        <h2><img src="assets/svgs/albums.svg" alt="">Music Albums</h2>
+        <div class="cardContainer">
+          <!--Cards-->
+
+          <!--Music PlayBar-->
+          <div class="playbar">
+            <div class="upper-playbar">
+              <div class="songinfo">Song Name</div>
+              <div class="controls">
+                <img id="previous" class="invert" src="assets/svgs/previous.svg" alt="" />
+                <img id="play" class="invert" src="assets/svgs/play.svg" alt="" />
+                <img id="next" class="invert" src="assets/svgs/next.svg" alt="" />
+              </div>
+              <div class="songtime">Song Time</div>
+              <div class="volume">
+                <img class="invert" src="assets/svgs/volume.svg" alt="">
+                <div class="range">
+                  <input type="range" name="volume" id="">
+                </div>
+              </div>
+            </div>
+            <div class="seekbar">
+              <div class="circle"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Right Container Ends-->
+  </div>
+</body>
+
 </html>

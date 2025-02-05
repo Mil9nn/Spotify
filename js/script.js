@@ -91,10 +91,8 @@ async function displayAlbums() {
     for (let index = 0; index < array.length; index++) {
         const e = array[index];
 
-        if (e.href.includes("/songs/")) {
+        if (e.href.includes("/songs") && !e.href.includes(".htaccess")) {
             let folder = e.href.split("/").splice(-1)[0];
-            console.log(folder);
-            console.log(`/songs/${folder}/info.json`);
             // Get the metadata of the folder
             let a = await fetch(`/songs/${folder}/info.json`);
             let response = await a.json();
@@ -191,7 +189,6 @@ async function main() {
 
     // Add event listener to mute the track
     document.querySelector(".volume img").addEventListener("click", (e) => {
-        console.log(e.target);
         if (e.target.src.includes("volume.svg")) {
             e.target.src = e.target.src.replace("volume.svg", "mute.svg");
             currentSong.volume = 0;

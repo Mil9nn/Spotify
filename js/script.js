@@ -84,14 +84,14 @@ async function displayAlbums() {
     let div = document.createElement("div");
     div.innerHTML = response;
 
-    let anchors = div.getElementsByTagName("a");
     let cardContainer = document.querySelector(".cardContainer");
+
+    let anchors = div.getElementsByTagName("a");
 
     let array = Array.from(anchors);
     for (let index = 0; index < array.length; index++) {
         const e = array[index];
-
-        if (e.href.includes("/songs") && !e.href.includes(".htaccess")) {
+        if (e.href.includes("/songs/") && !e.href.includes(".htaccess")) {
             let folder = e.href.split("/").splice(-1)[0];
             // Get the metadata of the folder
             let a = await fetch(`/songs/${folder}/info.json`);

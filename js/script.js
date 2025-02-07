@@ -38,7 +38,7 @@ async function getSongs(folder) {
     songs.forEach((song) => {
         songUL.innerHTML += `<li>
                 <div class="song-info">
-                  <img class="invert" src="assets/svgs/music.svg" alt="" />
+                  <img src="assets/svgs/music.svg" alt="" />
                   <div>
                     <div>${song}</div>
                     <div>Harry</div>
@@ -47,8 +47,7 @@ async function getSongs(folder) {
                 <div class="play-now">
                   <span>Play Now</span>
                   <img
-                    width="25"
-                    class="invert"
+                    width="20"
                     src="assets/svgs/play.svg"
                     alt=""
                   />
@@ -92,7 +91,10 @@ async function displayAlbums() {
     for (let index = 0; index < array.length; index++) {
         const e = array[index];
         if (e.href.includes("/songs/") && !e.href.includes(".htaccess")) {
-            let folder = e.href.split("/").splice(-1)[0];
+            let href = e.href;
+            console.log(href);
+            let folder = e.href.split("/").filter(Boolean).splice(-1)[0];
+            console.log(folder);
             // Get the metadata of the folder
             let a = await fetch(`/songs/${folder}/info.json`);
             let response = await a.json();

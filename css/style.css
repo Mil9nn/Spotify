@@ -12,8 +12,6 @@
 }
 
 body {
-    background-color: #000;
-    color: #fff;
     font-family: "Rubik", serif;
 }
 
@@ -27,6 +25,7 @@ body {
     flex-direction: column;
     gap: 10px;
     padding: 10px;
+    background-color: #e0e0e0;
 }
 
 .home {
@@ -34,7 +33,7 @@ body {
     flex-direction: column;
     gap: 5px;
     padding: 10px;
-    background-color: #121212;
+    background-color: #ededed;
     border-radius: 6px;
 }
 .home div {
@@ -64,7 +63,7 @@ body {
 
 .library {
     padding: 10px;
-    background-color: #121212;
+    background-color: #ededed;
     border-radius: 6px;
 }
 
@@ -141,7 +140,8 @@ body {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    padding: 10px;
+    background-color: #e0e0e0;
+    position: relative;
 }
 
 .header {
@@ -149,7 +149,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0 10px;
-    background-color: #1f1f1f;
+    background-color: #efefef;
 }
 .header div {
     display: flex;
@@ -165,18 +165,17 @@ body {
 }
 
 .sign-in-btns > :nth-child(1) {
-    color: #fff;
+    color: #ff6347;
 }
 .sign-in-btns > :nth-child(2) {
-    background-color: #fff;
-    color: #000;
+    background-color: #ff6347;
+    color: #fff;
     padding: 10px 20px;
     border-radius: 26px;
 }
 
 .albums {
-    background-color: #121212;
-    padding: 10px;
+    background-color: #e0e0e0;
 }
 .albums h2 {
     display: flex;
@@ -194,16 +193,15 @@ body {
     flex-wrap: wrap;
     gap: 10px;
     height: 75vh;
-    position: relative;
     overflow-y: auto;
     padding: 10px;
 }
 
 .card {
-    background-color: #1f1f1f;
+    background-color: #fff;
     border-radius: 5px;
     width: 180px;
-    height: 250px;
+    height: 260px;
     padding: 7px;
     position: relative;
     transition: all 0.3s ease;
@@ -211,7 +209,6 @@ body {
 }
 .card:hover {
     cursor: pointer;
-    background-color: #423e3e;
     transform: scale(1.05);
 }
 .card:hover .green-play-btn {
@@ -219,14 +216,14 @@ body {
 }
 .card > img {
     width: 100%;
-    height: 70%;
+    height: 180px;
     margin-bottom: 10px;
 }
 .card h4 {
     font-weight: 500;
 }
 .card p {
-    color: gray;
+    color: #514d4d;
     font-size: 15px;
 }
 
@@ -260,14 +257,14 @@ body {
 /****PLAY BAR****/
 
 .playbar {
-    width: 97%;
-    height: 50px;
-    background-color: #1f1f1f;
-    border-radius: 25px;
+    width: 100%;
+    height: 80px;
+    background-color: whitesmoke;
+    border-radius: 4px;
 
-    position: fixed;
+    position: absolute;
     bottom: 1%;
-    left: 1%;
+    left: 0;
     z-index: 5;
 
     display: flex;

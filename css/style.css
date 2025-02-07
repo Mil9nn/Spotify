@@ -380,6 +380,7 @@ body {
     .playbar {
         height: 150px;
         border-radius: 0;
+        margin-bottom: 55px;
     }
 }
 

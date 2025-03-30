@@ -1,78 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/utility.css" />
-  <script src="js/script.js" defer></script>
-  <title>Document</title>
+  <title>Euphonia - Your Music Companion</title>
+  <link rel="icon" type="image/svg+xml" href="assets/svgs/logo.svg" />
 </head>
-
 <body>
   <div class="container">
     <div class="left">
       <div class="home">
         <div>
           <div class="logo-section">
-            <img width="50" src="assets/svgs/logo.svg" alt="" />
+            <img width="32" src="assets/svgs/logo.svg" alt="Euphonia Logo" />
             <span>Euphonia</span>
           </div>
-          <img class="close" src="assets/svgs/close.svg" alt="" />
+          <img class="close" src="assets/svgs/close.svg" alt="Close sidebar" />
         </div>
-        <div>
-          <img src="assets/svgs/home.svg" alt="" />
+        <div class="navigation-item">
+          <img src="assets/svgs/home.svg" alt="Home icon" />
           <span>Home</span>
-        </div>
-        <div>
-          <img src="assets/svgs/search.svg" alt="" />
-          <span>Search</span>
         </div>
       </div>
       <div class="library">
-        <h2><img width="50" src="assets/svgs/library.svg" alt="">Music Library</h2>
+        <h2><img src="assets/svgs/library.svg" alt="Library icon">Your Library</h2>
         <div class="songList">
           <ul>
-
+            <!-- Songs will be populated here -->
           </ul>
         </div>
       </div>
     </div>
     <!--Left Container Ends-->
-
     <div class="right">
       <div class="header">
-        <div>
-          <img class="hamburger" src="assets/svgs/hamburger.svg" alt="" />
-          <img src="assets/svgs/left-angle.svg" alt="" />
-          <img src="assets/svgs/right-angle.svg" alt="" />
+        <div class="header-controls">
+          <img class="hamburger" src="assets/svgs/hamburger.svg" alt="Menu" />
+          <img src="assets/svgs/left-angle.svg" alt="Go back" />
+          <img src="assets/svgs/right-angle.svg" alt="Go forward" />
         </div>
         <div class="sign-in-btns">
-          <a href="#">Sign in</a>
+          <a href="#">Sign up</a>
           <a href="#">Log in</a>
         </div>
       </div>
       <div class="albums">
-        <h2><img src="assets/svgs/albums.svg" alt="">Music Albums</h2>
+        <h2><img src="assets/svgs/albums.svg" alt="Albums icon">Discover Music</h2>
         <div class="cardContainer">
-          <!--Cards-->
-
+          <!-- Album cards will be populated here -->
         </div>
         <!--Music PlayBar-->
         <div class="playbar">
           <div class="upper-playbar">
-            <div class="songinfo">Song Name</div>
+            <div class="songinfo">Select a song to play</div>
             <div class="controls">
-              <img id="previous" src="assets/svgs/previous.svg" alt="" />
-              <img id="play" src="assets/svgs/play.svg" alt="" />
-              <img id="next" src="assets/svgs/next.svg" alt="" />
+              <img id="previous" src="assets/svgs/previous.svg" alt="Previous" />
+              <img id="play" src="assets/svgs/play.svg" alt="Play" />
+              <img id="next" src="assets/svgs/next.svg" alt="Next" />
             </div>
-            <div class="songtime">Song Time</div>
+            <div class="songtime">00:00 / 00:00</div>
             <div class="volume">
-              <img src="assets/svgs/volume.svg" alt="">
+              <img src="assets/svgs/volume.svg" alt="Volume">
               <div class="range">
-                <input type="range" name="volume" id="">
+                <input type="range" name="volume" min="0" max="100" value="70">
               </div>
             </div>
           </div>
@@ -84,6 +75,7 @@
     </div>
     <!--Right Container Ends-->
   </div>
+  
+  <script src="js/script.js"></script>
 </body>
-
 </html>
